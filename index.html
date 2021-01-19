@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<title>Harvard Chinese Language Series</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="#books" onclick="w3_close()" class="w3-bar-item w3-button">Book Materials</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"> <i>Jennifer Liu</i></div>
+    <div class="w3-center w3-padding-16">Harvard Chinese Language Series</div>
+  </div>
+</div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+  <hr id="books">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-32 w3-center">
+    <h3>Materials</h3>
+    <div class="w3-padding-32">
+    </div>
+    <div class="w3-quarter">
+      <a href="1.1.html"><img src="covers/1.1.jpg" alt="1.1" style="width:100%"></a>
+      <h3><a href="1.1.html">Elementary Modern Chinese, Vol. I</a></h3>
+      <!-- <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="1.2.html"><img src="covers/1.2.jpg" alt="1.2" style="width:100%"></a>
+      <h3><a href="1.2.html">Elementary Modern Chinese, Vol. II</a></h3>
+      <!-- <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="2.1.html"><img src="covers/2.1.jpg" alt="2.1" style="width:100%"></a>
+      <h3><a href="2.1.html">Intermediate Modern Chinese, Vol. I</a></h3>
+      <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="2.2.html"><img src="covers/2.2.jpg" alt="2.2" style="width:100%"></a>
+      <h3><a href="2.2.html">Intermediate Modern Chinese, Vol. II</a></h3>
+      <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+  </div>
+
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="3.1.html"><img src="covers/3.1.jpg" alt="3.1" style="width:100%"></a>
+      <h3><a href="3.1.html">Pre-Advanced Modern Chinese, Vol. I</a></h3>
+      <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="3.2.html"><img src="covers/3.2.jpg" alt="3.2" style="width:100%"></a>
+      <h3><a href="3.2.html">Pre-Advanced Modern Chinese, Vol. II</a></h3>
+      <!-- <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="4.1.html"><img src="covers/4.1.jpg" alt="4.1" style="width:100%"></a>
+      <h3><a href="4.1.html">Advanced Modern Chinese, Vol. I</a></h3>
+      <!-- <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="4.2.html"><img src="covers/4.2.jpg" alt="4.2" style="width:100%"></a>
+      <h3><a href="4.2.html">Advanced Modern Chinese, Vol. II</a></h3>
+      <!-- <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+  </div>
+
+  <!-- Third Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <a href="5.1.html"><img src="covers/5.1.jpg" alt="5.1" style="width:100%"></a>
+      <h3><a href="5.1.html">Advanced-High Modern Chinese, Vol. I</a></h3>
+      <!-- <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+    <div class="w3-quarter">
+      <a href="5.2.html"><img src="covers/5.2.jpg" alt="5.2" style="width:100%"></a>
+      <h3><a href="5.2.html">Advanced-High Modern Chinese, Vol. II</a></h3>
+      <!-- <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+    </div>
+  </div>
+  <!-- Pagination -->
+  <!-- <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div> -->
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">
+    <h3>About the Series</h3>
+    <div class="w3-padding-32">
+      <p>The Harvard Chinese Language Series (HCLS) is a ground-breaking, multi-year work that incorporates the latest research in language pedagogy and aims to transform the practice of Chinese language teaching and learning in the U.S. and abroad. The series is informed by a coherent, overarching pedagogical framework, focusing on systematically moving students from one level to the next, covering five levels of Chinese instruction and ultimately helping students reach the ACTFL “Superior” (near-native) level of proficiency. It aims to enable students at specific proficiency levels to reach different practical goals: to be able to talk about their daily life, to express views and gain a substantive understanding of life abroad (or in China and Taiwan), to engage in debates on contemporary issues from multiple perspectives, to experience and appreciate different genres and styles of Chinese writing, to understand Chinese culture and society from both a contemporary and historical perspective, and to use Chinese in academic and professional contexts.</p>
+
+
+
+<p>HCLS include ten volumes designed for use in a semester system (at least 60 contact hours, not including review sessions). These books are intended for a broad audience of learners with diverse interests, backgrounds, prior exposure to Chinese language and culture, and motivations for pursuing Chinese as a foreign language. Whether students have traveled previously in China or not at all; whether their Chinese language ability is relatively consistent or uneven across different skill areas, they will find the series accommodating, motivating, and thought-provoking. The series is designed with a pedagogical approach that can be characterized by four instructional principles: (1) learner-centered and thematically organized, (2) standards-based and authenticity-driven, (3) research-informed and level-appropriate, and (4) feature-consistent and challenge-progressive. </p>
+
+
+
+<p>This textbook series is the culmination of a project that I first undertook in 2012 to address the need for a set of up-to-date, comprehensive, systematic learning tools to guide Chinese language learners in developing proficiency. I wrote the first volume of the beginning level together with Qiuyu Wang, a Preceptor in the Harvard Chinese Language Program. Having received consistently positive feedback from students after two years of field-testing, I proceeded to write the second volume of the beginning level on my own, and the next six volumes of the series together with Kang Zhou, Jie Ying, and Panpan Gao, the CLP course heads for, respectively, the intermediate, pre-advanced, and advanced course levels, during 2014-2016. I finished the last two volumes for the advanced-high/superior level with Panpan Gao and Jie Zhao separately in 2016-2017. </p>
+
+
+
+<p>A project of this scope could not succeed without institutional support and the help of many people beyond just the authors themselves. I would like to express my sincere thanks to Alex Lopatin, Study Abroad Programs Coordinator at the Harvard Summer School, and all Chinese instructors and students who taught and studied Chinese language courses during 2012-2020. </p>
+<p><i> ~Jennifer Liu</i></p>
+    </div>
+    <img src="author.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="200" height="533">
+  </div>
+  <hr>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
