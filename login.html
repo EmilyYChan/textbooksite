@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<title>Harvard Chinese Language Series</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-right w3-padding-16"> <i>Jennifer Liu</i></div>
+    <div class="w3-center w3-padding-16">Harvard Chinese Language Series</div>
+  </div>
+</div>
+
+<div class="w3-main w3-content w3-padding w3-center" style="max-width:1200px;margin-top:100px">
+Please enter your access code:<br>
+  <form id="login-form">
+    <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Access Code">
+    <input type="submit" value="Login" id="login-form-submit">
+  </form>
+</div>
+
+
+<script>
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+
+loginButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    const password = loginForm.password.value;
+
+    if (password === "review") {
+        location.href="index.html";
+    } else {
+        window.alert("Incorrect password, please try again.");
+    }
+})
+
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
